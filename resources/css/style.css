@@ -1,0 +1,287 @@
+/*---------------------------------------------------------------*/
+/* BASIC SETUP */
+/*---------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    color: #898989;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    
+}
+
+.clearfix (zoom: 1)
+.clearfix {
+    content: '.';
+    clear: both;
+    display: 
+}
+
+/*---------------------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*---------------------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 55px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* HEADINGS */
+
+h1,
+h2,
+h3  {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* PARAGRAPHS */
+
+.long-copy {
+    line-height: 145%;
+    width: 85%;
+    margin-left: 10%;
+    text-indent: 50px;
+}
+
+.section-history {
+    background-color: rgba(255, 255, 255, 0.98);
+}
+.credits {
+    text-align: right;
+}
+
+.credits a:hover,
+.credits a:active {
+    color: #e67e22;
+    transition: color 0.2s;
+}
+
+.credits i {
+    vertical-align: middle;
+}
+
+.section-history a {
+    color: #999;
+    text-decoration: none;
+}
+
+.box P {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*---------------------------------------------------------------*/
+/* HEADER */
+/*---------------------------------------------------------------*/
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.4)), url(images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/*---------------------------------------------------------------*/
+/* GALLERY */
+/*---------------------------------------------------------------*/
+
+img {
+    max-width: 100%;
+    height: auto; 
+}
+
+
+.section-gallery {
+    width: 100%;
+    text-align: center;
+}
+
+.gallery {
+    width: 18%;
+}
+
+.ext-gallery {
+    width: 22%;
+}
+
+.external-gallery {
+    text-align: right;
+    padding-right: 2.2%;
+    color: #898989;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+.external-gallery-1 {
+    text-align: left;
+    padding-left: 2.2%;
+    color: #898989;
+    text-decoration: none;
+    font-size: 110%;
+}
+
+.external-gallery a:hover,
+.external-gallery a:active {
+    color: #e67e22;
+    transition: color 0.2s;
+}
+
+/*---------------------------------------------------------------*/
+/* VIDEO */
+/*---------------------------------------------------------------*/
+
+.video {
+    width: 560px; 
+    height: 315px;
+    padding: 15px;
+}
+
+
+/*---------------------------------------------------------------*/
+/* MAP */
+/*---------------------------------------------------------------*/
+.section-map {
+    padding: 0;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+
+/*---------------------------------------------------------------*/
+/* FOODER */
+/*---------------------------------------------------------------*/
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 90%;
+    padding: 20px;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+/*---------------------------------------------------------------*/
+/* ANIMATIONS */
+/*---------------------------------------------------------------*/
+
+
+.js--wp-1, 
+.js--wp-2, 
+.js--wp-3  {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    /*this will hide these elements before animation begin */
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated
+{
+    opacity: 1;
+    /* this will show elements after the animation ends. 
+    When the classes are written together, they will be called simulanously*/
+}
+
+
+
