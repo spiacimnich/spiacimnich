@@ -30,6 +30,14 @@ html {
 /* REUSABLE COMPONENTS */
 /*---------------------------------------------------------------*/
 
+.kalendar {
+    width: 25%;
+}
+
+.middle {
+    text-align: center;
+}
+
 .row {
     max-width: 1140px;
     margin: 0 auto;
@@ -193,19 +201,11 @@ img {
 }
 
 .external-gallery {
-    text-align: right;
-    padding-right: 2.2%;
+    text-align: center;
+    padding-top: 3%;
     color: #898989;
     text-decoration: none;
-    font-size: 110%;
-}
-
-.external-gallery-1 {
-    text-align: left;
-    padding-left: 2.2%;
-    color: #898989;
-    text-decoration: none;
-    font-size: 110%;
+    font-size: 125%;
 }
 
 .external-gallery a:hover,
@@ -219,8 +219,7 @@ img {
 /*---------------------------------------------------------------*/
 
 .video {
-    width: 560px; 
-    height: 315px;
+    width: 33%; 
     padding: 15px;
 }
 
