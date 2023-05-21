@@ -127,7 +127,7 @@ h3 {
 
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.4)), url(images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.4)), url(images/hero.webp);
     background-size: cover;
     background-position: center;
     height: 100vh;
